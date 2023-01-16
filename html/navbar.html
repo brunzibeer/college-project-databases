@@ -1,0 +1,28 @@
+<div class="navbar-fixed">
+<nav>
+    <div class="nav-wrapper">
+      <a href="/index.html" class="brand-logo">MTG Collection Manager</a>
+      <ul id="nav-mobile" class="right hide-on-med-and-down">
+        <li> 
+          <form action = "/php/searchCard.php" method = "GET">  
+            <div class="center row">
+                <div class="col s12 " >
+                    <div class="row" id="searchBar">
+                        <div class="input-field col s6 s12 yellow-text">
+                            <i class = "material-icons prefix">search</i>
+                            <input name = "search" type = "text" id="icon_search" class="materialize-textarea white-text"></input>
+                            <label for="icon_search">search card name</label>
+                        </div>
+                    </div>
+                </div>
+            </div> 
+          </form>         
+        </li>
+        <li><a href="/html/advancedSearchCard.html"><i class = "material-icons left">view_list</i>Advanced Search</a></li>
+        <li><a href="/php/myDecks.php"><i class = "material-icons left">playlist_play</i>My Decks</a></li>
+        <li><a href="/php/myWishlist.php"><i class = "material-icons left">playlist_add</i>My Wishlist</a></li>
+        <li><a href="/php/myCollection.php"><i class = "material-icons left">playlist_add_check</i>My Collection</a></li>
+      </ul>
+    </div>
+  </nav>
+</div>

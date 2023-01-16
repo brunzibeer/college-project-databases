@@ -1,0 +1,168 @@
+<html>
+  <head>
+    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!--Import materialize.css-->
+    <link type="text/css" rel="stylesheet" href="/css/materialize.css"  media="screen,projection"/>
+
+    <!--Let browser know website is optimized for mobile-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="layout" content="">
+
+    <title>Advanced Card Search</title>
+  </head>
+
+  <body>
+    <div id="nav-placeholder">
+        
+    </div>
+
+    <!-- Search Form -->
+    <div class = "container">
+      <form action = "/php/advancedSearch.php" method = "GET">
+        <div class = "row">
+          <div class = "input-field col s6">
+            <i class = "material-icons prefix">assignment_ind</i>
+            <input type = "text" id="icon_name" class="materialize-textarea" name = "advName"></input>
+            <label for="icon_name">"Card Name" eg:"nicol bolas"</label>
+          </div>
+          <div class = "input-field col s6">
+              <i class = "material-icons prefix">description</i>
+              <input type = "text" id="icon_desc" class="materialize-textarea" name = "advDesc"></input>
+              <label for="icon_desc">"Card Text" eg:"draw a card"</label>
+            </div>
+        </div>
+        <div class = "row">
+            <div class = "input-field col s6">
+              <i class = "material-icons prefix">fingerprint</i>
+              <input type = "text" id="icon_type" class="materialize-textarea" name = "advType"></input>
+              <label for="icon_type">"Card Type" eg:"enchantment"</label>
+            </div>
+            <div class = "input-field col s6">
+                <i class = "material-icons prefix">attach_money</i>
+                <input type = "text" id="icon_cost" class="materialize-textarea" name = "advCost"></input>
+                <label for="icon_cost">"Converted Mana Cost" eg:"4"</label>
+              </div>
+        </div>
+        <div class = "row">
+            <div class = "input-field col s6">
+              <div class = "col s4">
+              <i class = "material-icons prefix">web</i>
+              <input type = "text" id="icon_power" class="materialize-textarea" name = "advPow"></input>
+              <label for="icon_power">"Power" eg:"3"</label>
+            </div>
+            <div class = "col s4">
+              <input type = "text" id="icon_tough" class="materialize-textarea" name = "advTou"></input>
+              <label for="icon_tough">"Toughness" eg:"2"</label>
+              </div>
+              <div class = "col s4">
+                  <input type = "text" id="icon_loy" class="materialize-textarea" name = "advLoy"></input>
+                  <label for="icon_loy">"Loyalty" eg:"5"</label>
+                  </div>
+            </div>
+            <div class = "input-field col s6">
+                <i class = "material-icons prefix">stars</i>
+                <input type = "text" id="icon_set" class="materialize-textarea" name = "advSet"></input>
+                <label for="icon_set">"Card Set" eg:"m19"</label>
+              </div>
+        </div>
+        <div class = "row">
+          <div class = "input-field col s12">
+            <div class = "col s2">
+              <i class = "material-icons prefix">palette</i>
+              <label>
+                <input type = "hidden" name = "advW" value="" id="wHidden" />
+                <input type = "checkbox" name = "advW" class = "filled-in" value="yes" id="w" />
+                <span>
+                  <img src = "/imgs/W.svg" height = "20px" width = "20px">
+                  White
+                </span>
+              </label>
+            </div>
+
+            <div class = "col s2">
+              <label>
+                <input type = "hidden" name = "advU" value="" id="uHidden" />
+                <input type = "checkbox" name = "advU" class = "filled-in" value="yes" id="u" />
+                  <span>
+                    <img src = "/imgs/U.svg" height = "20px" width = "20px">
+                    Blue
+                  </span>
+              </label>
+            </div>
+
+            <div class = "col s2">
+              <label>
+                <input type = "hidden" name = "advB" value="" id="bHidden" />
+                <input type = "checkbox" name = "advB" class = "filled-in" value="yes" id="b" />
+                  <span>
+                    <img src = "/imgs/B.svg" height = "20px" width = "20px">
+                    Black
+                  </span>
+                </label>
+            </div>
+
+            <div class = "col s2">
+              <label>
+                <input type = "hidden" name = "advR" value="" id="rHidden" />
+                <input type = "checkbox" name = "advR" class = "filled-in" value="yes" id="r" />
+                  <span>
+                    <img src = "/imgs/R.svg" height = "20px" width = "20px">
+                      Red
+                  </span>
+              </label>
+            </div>
+
+            <div class = "col s2">
+              <label>
+                <input type = "hidden" name = "advG" value="" id="gHidden" />
+                <input type = "checkbox" name = "advG" class = "filled-in" value="yes" id="g" />
+                  <span>
+                    <img src = "/imgs/G.svg" height = "20px" width = "20px">
+                    Green
+                  </span>
+                </label>
+            </div>
+
+            <div class = "col s2">
+              <label>
+                <input type = "hidden" name = "advC" value="" id="cHidden" />
+                <input type = "checkbox" name = "advC" class = "filled-in" value="yes" id="c" />
+                    <span>
+                      <img src = "/imgs/C.svg" height = "20px" width = "20px">
+                      Colorless
+                    </span>
+                </label>
+            </div>
+
+          </div>
+        </div>
+
+        <hr><br>
+
+        <div class = "row">
+          <div class = "col s6">
+              <button id = "send-tooltip" class="btn waves-effect waves-light tooltipped" data-position = "bottom" 
+                data-tooltip = "Note that leaving all blank will show all the cards in the DB" 
+                type="submit" name="action">Search with these options
+                <i class="material-icons right">send</i>
+              </button>
+          </div>
+        </div>
+      </form>
+    </div>
+
+
+
+        <!--JavaScript at end of body for optimized loading-->
+        <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script type="text/javascript" src="/js/materialize.js"></script>
+    <script>
+            $(document).ready(function(){
+                $("#nav-placeholder").load("./navbar.html");
+                $("#send-tooltip").tooltip();
+            });
+    </script>
+
+  </body>
+</html>

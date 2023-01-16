@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!--Import materialize.css-->
+    <link type="text/css" rel="stylesheet" href="css/materialize.css"  media="screen,projection"/>
+
+    <!--Let browser know website is optimized for mobile-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="layout" content="">
+
+    <title>MTG Collection Manager</title>
+  </head>
+
+  <body>
+    <div id="nav-placeholder">
+        
+    </div>
+
+
+    <!-- Slideshow -->
+    <div class="carousel" id="mainCarousel">
+        <a class="carousel-item" href="#one!"><img src="https://img.scryfall.com/cards/large/en/vma/4.jpg" alt="card"></a>
+        <a class="carousel-item" href="#two!"><img src="https://img.scryfall.com/cards/large/en/mp2/25.jpg" alt="card"></a>
+        <a class="carousel-item" href="#three!"><img src="https://img.scryfall.com/cards/large/en/m19/88.jpg" alt="card"></a>
+        <a class="carousel-item" href="#four!"><img src="https://img.scryfall.com/cards/large/en/rix/174.jpg" alt="card"></a>
+        <a class="carousel-item" href="#five!"><img src="https://img.scryfall.com/cards/large/en/dom/21.jpg" alt="card"></a>
+        <a class="carousel-item" href="#six!"><img src="https://img.scryfall.com/cards/large/en/c13/204.jpg" alt="card"></a>
+        <a class="carousel-item" href="#seven!"><img src="https://img.scryfall.com/cards/large/en/xln/129.jpg" alt="card"></a>
+        <a class="carousel-item" href="#eight!"><img src="https://img.scryfall.com/cards/large/en/c17/36.jpg" alt="card"></a>
+        <a class="carousel-item" href="#nine!"><img src="https://img.scryfall.com/cards/large/en/m19/222.jpg" alt="card"></a>
+        <a class="carousel-item" href="#ten!"><img src="https://img.scryfall.com/cards/large/en/a25/62.jpg" alt="card"></a>
+    </div>
+
+
+    <!--JavaScript at end of body for optimized loading-->
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script type="text/javascript" src="js/materialize.js"></script>
+    <script>
+            $(document).ready(function(){
+                $('#mainCarousel').carousel();
+                $("#nav-placeholder").load("/html/navbar.html");
+            });
+    </script>
+
+  </body>
+</html>
